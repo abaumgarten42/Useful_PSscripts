@@ -1,3 +1,5 @@
+# Transforming every line/column/value of a CSV file
+
 $NewLines = "newID,DisplayName,Email,oldID,FirstName,LastName`r`n" #Define new header
 Import-Csv -Path ./transformScript.csv | # read csv file
 ForEach-Object { # for each line in csv

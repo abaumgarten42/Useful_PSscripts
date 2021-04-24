@@ -1,4 +1,5 @@
-# Use script variables in a Scriptblock 
+# Use script variables in a Scriptblock example
+
 $a = "1"
 $b = "2"
 

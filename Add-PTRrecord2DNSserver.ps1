@@ -1,4 +1,5 @@
 # Add PTR record to DNS server
+
 $file = "./serversPTRrecords.csv"
 Import-Csv -Path $file | ForEach-Object {
     $name = (($_.IPAddress).Split("."))[3]
