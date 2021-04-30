@@ -7,12 +7,7 @@ $users = "mmouse","ppan1234"
 $Table = @() # clear table variable
 foreach ($user in $users) {
     $grp = "" # clear grp variable
-    $Row = [ordered]@{ # build hashtable
-        SamAccountName = ""
-        DisplayName    = ""
-        Email          = ""
-        Groups         = ""
-    }
+    $Row = [ordered]@{SamAccountName = "";DisplayName = "";Email = "";Groups = ""} # build hashtable
     $a = Get-AdUser -Identity $user -Properties * # get user
     $groups = $a.MemberOf # groupmemberships of user
     foreach ($g in $groups) {
