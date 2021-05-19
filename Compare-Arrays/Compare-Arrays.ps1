@@ -13,3 +13,10 @@ $array2 | ForEach-Object {
         Write-Host "`$array1 does not contain `$array2 string [$_]"
     }
 }
+
+# Another option
+
+Write-Output '== means string is in both arrays
+=> missing in ReferenceObject ($array1)
+<= missing in DifferenceObject ($array2)'
+Compare-Object -ReferenceObject $array1 -DifferenceObject $array2 -IncludeEqual
