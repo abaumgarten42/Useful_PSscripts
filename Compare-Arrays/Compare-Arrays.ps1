@@ -1,5 +1,6 @@
 # Compare 2 arrays and report which string is missing
 
+# First option
 $array1 = @('black', 'blue', 'red', 'white', 'yellow')
 $array2 = @('black', 'yellow', 'grey','purple','green')
 
@@ -14,7 +15,7 @@ $array2 | ForEach-Object {
     }
 }
 
-# Another option
+# Second option
 
 Write-Output '== means string is in both arrays
 => missing in ReferenceObject ($array1)
