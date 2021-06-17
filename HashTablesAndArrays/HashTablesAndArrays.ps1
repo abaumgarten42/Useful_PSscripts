@@ -5,7 +5,7 @@ $hash = @{ Id = "Id1"
 }
 $hash
 
-# Read input and Array
+# Read input and HashTable
 $in = Read-Host -Prompt 'Enter value pair "id:name"'
 $hash = @{ Id = (($in).Split(":")[0])
     Name      = (($in).Split(":")[1])
