@@ -1,0 +1,4 @@
+wlidsvc,Action,ServiceStatus
+svc1,restart,running
+svc2,stop,running
+svc3,start,stopped
