@@ -8,7 +8,7 @@ function JustForTest {
         [string]$ServiceStatus
     )
     # Put your code here
-    Write-Output "Service = $wlidsvc - Action = $Action - Status  = $ServiceStatus"
+    Write-Output "Service = $wlidsvc / Action = $Action / Status  = $ServiceStatus"
 }
 # Read CSV file with parameters
 $lines = Import-Csv -Path test1.csv -Delimiter ","
