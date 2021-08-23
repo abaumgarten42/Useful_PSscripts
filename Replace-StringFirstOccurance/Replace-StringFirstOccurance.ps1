@@ -1,4 +1,4 @@
-# This script will replace the first occurance of a string with anotner one
+# This script will replace the first occurance of a string with another one
 
 # Text string
 $txt = "Hey, how are you?
