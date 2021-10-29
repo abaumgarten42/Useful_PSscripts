@@ -1,7 +1,7 @@
 # Get all disks in Azure in a Subcription + related VM
 # Requires the AZ cmdlets
 # Login with Connect-AzAccount
-# Set conbtext with Set-AzContext -Name "<Name of Subscription>"
+# Set context with Set-AzContext -Name "<Name of Subscription>"
 # or Connect-AzAccount -SubscriptionID "<Subscription ID>"
 
 $result = "DiskName,DiskResourceGroupName,VMname,VMResourceGroupName `r`n"
