@@ -2,7 +2,7 @@
 # Requires the AZ cmdlets
 # Login with Connect-AzAccount
 # Set context with Set-AzContext -Name "<Name of Subscription>"
-# or Connect-AzAccount -SubscriptionID "<Subscription ID>"
+# or Set-AzContext -SubscriptionID "<Subscription ID>"
 
 $result = "DiskName,DiskResourceGroupName,VMname,VMResourceGroupName `r`n"
 $diskObjects = get-azdisk
