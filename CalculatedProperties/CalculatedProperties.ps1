@@ -9,7 +9,7 @@ $a = $dateTime |
 $a
 
 # Calculate true/false property for LastLogonDate of AD computer = older than 365 days
-$threshoold = (Get-Date).AddDays(-365) # define threshold for "old" in - x days
+$threshold = (Get-Date).AddDays(-365) # define threshold for "old" in - x days
 Get-AdComputer -properties -filter | 
     Select-Object Name, OperatingSystem, OperatingSystemVersion, LastLogonDate, @{ Name = 'isOld' ; Expression = { If ($_.LastLogonDate -lt $threshold ) {$true} else {$false}} } | 
         Out-File -Encoding utf8 -FilePath "C:\Downloads\computers.txt"
