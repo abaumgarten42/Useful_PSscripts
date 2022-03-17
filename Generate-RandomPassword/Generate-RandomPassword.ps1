@@ -12,7 +12,7 @@ $a = @(
     [char](97..122 | get-random), # small letters
     [char](65..90 | get-random), # capital letters
     (0..9 | get-random), # numbers
-    [char](97..122 | get-random), # snall letters
+    [char](97..122 | get-random), # small letters
     ('!','@','#','$','%','^','&','*','?',';','+' | get-random), # special characters
     [char](65..90 | get-random), # capital letters
     (0..9 | get-random), # numbers
